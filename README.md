@@ -41,7 +41,7 @@ WO Files now supports custom **`.wo` theme bundles**.
 A `.wo` file is simply:
 
 ```
-THEMENAME: My Cool Theme
+THEMENAME: My_Cool_Theme
 /* CSS START */
 window {
     background: linear-gradient(135deg, ...);
