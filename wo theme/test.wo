@@ -1,0 +1,55 @@
+THEMENAME: test
+/* Main window background */
+window {
+    background: linear-gradient(135deg, #0a1428 0%, #142850 100%);
+    color: white;
+}
+
+/* Sidebar - use the actual widget name */
+#sidebar {
+    background: linear-gradient(160deg, #142850 0%, #1e3c78 100%);
+    border-right: 1px solid rgba(100, 180, 255, 0.15);
+    color: white;
+}
+
+/* Status bar */
+#statusbar {
+    background: linear-gradient(90deg, #0f1e3c 0%, #142850 100%);
+    border-top: 1px solid rgba(100, 180, 255, 0.15);
+    color: #ffffff;
+    padding: 4px;
+}
+
+/* Basic button styling */
+button {
+    background: linear-gradient(135deg, #23468c 0%, #193264 100%);
+    border: 1px solid rgba(100, 180, 255, 0.2);
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #376ec8 0%, #2d5ab4 100%);
+}
+
+/* Entry fields */
+entry {
+    background: #142850;
+    border: 1px solid rgba(100, 180, 255, 0.2);
+    color: white;
+    border-radius: 4px;
+}
+
+entry:focus {
+    border: 1px solid rgba(100, 180, 255, 0.4);
+}
+
+/* Scrollbars */
+scrollbar slider {
+    background: rgba(100, 180, 255, 0.5);
+    border-radius: 3px;
+}
+
+scrollbar trough {
+    background: rgba(20, 40, 80, 0.5);
+}

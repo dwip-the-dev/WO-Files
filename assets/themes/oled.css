@@ -289,6 +289,69 @@ progressbar progress {
         0 0 10px rgba(255, 255, 255, 0.1);
 }
 
+/* === TAB STYLES === */
+
+/* Tab bar */
+#tab-bar {
+    background: linear-gradient(90deg, 
+        rgba(15, 15, 15, 0.9) 0%, 
+        rgba(20, 20, 20, 0.85) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    min-height: 32px;
+}
+
+/* Tab buttons in our custom tab bar */
+#tab-bar button {
+    background: linear-gradient(135deg, 
+        rgba(30, 30, 30, 0.8) 0%, 
+        rgba(25, 25, 25, 0.7) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 2px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+#tab-bar button:hover {
+    background: linear-gradient(135deg, 
+        rgba(50, 50, 50, 0.9) 0%, 
+        rgba(40, 40, 40, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Tab close button */
+#tab-close-btn {
+    background: linear-gradient(135deg, 
+        rgba(40, 40, 40, 0.8) 0%, 
+        rgba(35, 35, 35, 0.7) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 0px;
+    margin: 0px;
+    min-width: 16px;
+    min-height: 16px;
+    font-size: 12px;
+}
+
+#tab-close-btn:hover {
+    background: linear-gradient(135deg, 
+        rgba(255, 100, 100, 0.8) 0%, 
+        rgba(200, 60, 60, 0.7) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hide notebook tabs since we use custom tab bar */
+notebook header {
+    display: none;
+}
+
+notebook {
+    background: transparent;
+    border: none;
+}
+
 /* TOOLTIPS */
 tooltip {
     background: linear-gradient(135deg, 

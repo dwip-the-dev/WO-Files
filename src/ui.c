@@ -3,15 +3,14 @@
 #include <gtk/gtk.h>
 #include <string.h>
 
-/* Create grid */
 GtkWidget* ui_create_grid(void)
 {
     GtkListStore *st = gtk_list_store_new(
         4,
-        GDK_TYPE_PIXBUF,  /* icon */
-        G_TYPE_STRING,    /* name */
-        G_TYPE_STRING,    /* path */
-        G_TYPE_BOOLEAN    /* is_dir */
+        GDK_TYPE_PIXBUF,  
+        G_TYPE_STRING,   
+        G_TYPE_STRING,  
+        G_TYPE_BOOLEAN 
     );
 
     GtkWidget *v = gtk_icon_view_new_with_model(GTK_TREE_MODEL(st));

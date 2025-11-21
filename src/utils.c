@@ -89,7 +89,7 @@ GList* utils_list_dir(const char *path)
     {
         if (!strcmp(ent->d_name, ".")) continue;
 
-        /* hide dotfiles unless sudo enabled */
+     
         if (!sudo_mode && ent->d_name[0] == '.')
             continue;
 

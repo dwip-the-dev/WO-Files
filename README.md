@@ -1,57 +1,100 @@
-# **WO Files – Ultra-Modern GTK File Manager 🗂️🔥**
+# **WO Files – Ultra-Modern GTK File Manager 🗂️⚡🔥**
 
-WO Files is a **lightweight, blazing-fast, modern C/GTK file manager** featuring an **OLED-black UI**, smooth animations, custom icons, and a clean design inspired by macOS + KDE + futuristic cyberpunk vibes.
+WO Files is a **modern, lightweight, drag-and-drop themeable file manager** built in **pure C + GTK3**.
+Featuring an **OLED UI**, smooth glass effects, custom icons, fast performance, and an insane level of polish — all crafted in C with pain and anger.
 
-Built entirely in **C + GTK3**, it aims to be a minimal, efficient, aesthetic alternative to heavy file managers.
+This is not “just another file manager”.
+This is **WO Files**, an aesthetic, hacker-grade, ultra-fast explorer.
 
 ---
 
-## **✨ Features**
+## ✨ **Features**
 
-🔥 **Modern OLED Black UI** – fully custom CSS theme
+🔮 **Modern OLED UI** with glass morphism (idk kinda)
 
-🎨 **Icon Pack Integration** – clean icons from Icons8
+🎨 **Theme Engine + .WO Theme Packages (drag & drop install)**
 
-📁 **Icon Grid View** – fast, responsive, dynamic
+📁 **Icon Grid View** (custom icons per file type)
 
-🔍 **Smart Search** – instant filtering + deep search
+🔍 **Instant Search** (filter + live update) (janky needs improvement)
 
-📜 **History Navigation** – back / forward / up
+⏪ **History Navigation** — Back / Forward / Up
 
-✂️ **File Operations** – copy, cut, paste, rename, delete
+✂️ **File Ops:** Copy, Cut, Paste, Rename, Delete
 
-🗑️ **Right-Click Context Menu**
+🖱️ **Right-Click Context Menu**
 
-🧩 **Auto-detects file type → loads correct icon**
+🔒 **Instant SUDO Mode** (browse system dirs seamlessly)
 
 📌 **Custom Sidebar Shortcuts**
 
-🔒 **SUDO mode** (browse system directories instantly)
+🧠 **Smart Icon Matching** (guess icon from extension)
 
-⚡ **Fast recursive scanning**
-
-🖼️ **Smooth hover effects & card-style item view**
+💬 **Status Bar:** item count | free space
 
 ---
 
-## **📸 Screenshots**
+## 🧩 **.WO Theme Format (Drag & Drop Themes)**
 
-![Screenshot](assets/ss1.png)
-![Screenshot](assets/ss2.png)
+WO Files now supports custom **`.wo` theme bundles**.
+
+A `.wo` file is simply:
+
+```
+THEMENAME: My Cool Theme
+/* CSS START */
+window {
+    background: linear-gradient(135deg, ...);
+}
+/* CSS END */
+```
+
+### 🔥 How it works:
+
+* Drag **any `.wo` file** into the WO Files window
+* The app:
+
+  * Extracts the theme name
+  * Applies the CSS instantly
+  * Adds it to the theme dropdown
+  * Saves it to `assets/themes/yourtheme.wo`
+
+No restart. No rebuilding.
+Just ✨ **drop → apply**.
 
 ---
 
-## **🛠️ Build Instructions**
+## 🎨 **Included Themes**
 
-### **Dependencies**
+Stored in:
 
-You need GTK3:
+```
+assets/themes/
+│── oled.css
+│── red.css
+│── blue.css
+```
+✨Demo WO files are also included under /wo-files folder
+
+You can add unlimited themes via `.wo` files.
+
+---
+
+## 📸 **Screenshots**
+
+![ss1](assets/ss1.png)  ![ss2](assets/ss2.png)
+
+---
+
+## 🛠️ **Build Instructions**
+
+### Install GTK3
 
 ```bash
 sudo apt install libgtk-3-dev
 ```
 
-### **Clone & Build**
+### Build
 
 ```bash
 git clone https://github.com/dwip-the-dev/WO-Files.git
@@ -63,10 +106,19 @@ make
 
 ---
 
-## **📂 Project Structure**
+## 📂 **Project Structure**
 
 ```
-wo-files/
+WO-Files/
+│── assets/
+│   ├── <file icons>.png
+│   ├── bgwofiles.png
+│   ├── ss1.png
+│   ├── ss2.png
+│   ├── themes/
+│   │   ├── oled.css    //default themes
+│   │   ├── red.css
+│   │   └── blue.css
 │── src/
 │   ├── main.c
 │   ├── explorer.c
@@ -75,39 +127,32 @@ wo-files/
 │   ├── ui.h
 │   ├── utils.c
 │   ├── utils.h
-│── assets/
-│   ├── icons... (PNG files)
-│   ├── theme.css
-│   ├── logo.png
 │── Makefile
+│── LICENSE
 │── README.md
 ```
 
 ---
 
-## **🎨 Icon Credits**
+## 🎨 **Icon Credits**
 
-All icons used in this project are sourced from:
-
-### **[Icons8](https://icons8.com/)**
-
-Thanks to Icons8 for providing high-quality icons ♥️
+Icons by **[Icons8](https://icons8.com/)** ❤️
+Thanks for the clean visuals!
 
 ---
 
-## **🌟 Contribute**
+## 🌟 **Contribute**
 
-PRs are welcome!
-Feel free to submit:
+PRs are welcome for:
 
-* New UI ideas
-* New features
+* New themes
+* Feature additions
+* UI improvements
+* Performance optimizations
 * Bug fixes
-* Themes
-* Performance patches
 
 ---
 
-## **💬 Author**
+## 👨‍💻 **Author**
 
 Built with ❤️ by **Dwip**
